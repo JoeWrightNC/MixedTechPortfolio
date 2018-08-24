@@ -62,12 +62,12 @@ var _React = React,
     render = _ReactDOM.render,
     files = "./images/intro",
     content = {
-        title: "Inesa Doe",
-        subtitle: "UI/UX Designer",
+        title: "Joe Wright",
+        subtitle: "Creative Full Stack Designer",
         iphone: {
             title: "Design",
-            paragraph: "Creative user experience focused on intuitivity and usability.",
-            icons: ["adobe", "sketch", "svg"],
+            paragraph: "Creative UX/UI architect focused on intuitivity and usability.",
+            icons: ["adobe", "sketch", "svg",],
             images: {
                 main: files + "/iphone.png",
                 secondary: files + "/headphones.png",
@@ -78,8 +78,8 @@ var _React = React,
         },
         ipad: {
             title: "Web",
-            paragraph: "Responsive single page applications for modern browsers.",
-            icons: "html css svg sass javascript json babel webpack react redux relay apollo".split(" "),
+            paragraph: "Responsive web applications for modern browsers.",
+            icons: "html css sass javascript json babel webpack react redux".split(" "),
             images: {
                 main: files + "/ipad.png",
                 screens: [files + "/ipad_base.svg", files + "/ipad_outlines.svg", files + "/ipad_content.svg", files + "/ipad_interative.svg"]
@@ -87,8 +87,8 @@ var _React = React,
         },
         macbook: {
             title: "Development",
-            paragraph: "Real-time lightning fast V8 engine asynchronously execution.",
-            icons: "ubuntu nginx node socket graphql mongo jwt".split(" "),
+            paragraph: "Full stack web solutions built custom to your needs",
+            icons: "node express mongo".split(" "),
             images: {
                 main: files + "/macbook.png",
                 screens: [files + "/macbook_base.svg", files + "/macbook_outlines.svg", files + "/macbook_content.svg", files + "/macbook_interative.svg"]
@@ -514,10 +514,8 @@ var _React = React,
         _createClass(a, [{
             key: "render",
             value: function() {
-                return React.createElement("a", _extends({
-                    href: "/",
+                return React.createElement("div", _extends({
                     style: {
-                        pointerEvents: "auto",
                         margin: "0 0 40px"
                     }
                 }, this.props), React.createElement("img", {
