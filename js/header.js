@@ -79,7 +79,7 @@ var _React = React,
         ipad: {
             title: "Web",
             paragraph: "Responsive web applications for modern browsers.",
-            icons: "html css sass javascript json babel webpack react redux".split(" "),
+            icons: "html css sass javascript json babel webpack react".split(" "),
             images: {
                 main: files + "/ipad.png",
                 screens: [files + "/ipad_base.svg", files + "/ipad_outlines.svg", files + "/ipad_content.svg", files + "/ipad_interative.svg"]
@@ -88,7 +88,7 @@ var _React = React,
         macbook: {
             title: "Development",
             paragraph: "Full stack web solutions built custom to your needs",
-            icons: "node express mongo".split(" "),
+            icons: "node express mongo react redux passport socket npm".split(" "),
             images: {
                 main: files + "/macbook.png",
                 screens: [files + "/macbook_base.svg", files + "/macbook_outlines.svg", files + "/macbook_content.svg", files + "/macbook_interative.svg"]
