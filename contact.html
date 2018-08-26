@@ -36,9 +36,10 @@
                         <div class="block-content">
                             <div class="row">
                                 <div class="col-md-12">
-                                    <form id="contactForm" data-toggle="validator" class="contact-form shake" action="https://script.google.com/macros/s/AKfycbxYTWrYUH9kyuZSNm3pu99sEMZR9Fs7hngc8VCkxsLMp8rqky0/exec">
+                                    <form id="contactForm" data-toggle="validator" class="gform contact-form shake" action="https://script.google.com/macros/s/AKfycbxYTWrYUH9kyuZSNm3pu99sEMZR9Fs7hngc8VCkxsLMp8rqky0/exec" method="POST">
+                                        <div class="form-elements">
                                         <div class="form-group">
-                                            <input id="name" type="text" class="form-control" name="Name" autocomplete="off" required data-error="Please enter your name" placeholder="* Your Name">
+                                            <input id="name" type="text" class="form-control" name="name" autocomplete="off" required data-error="Please enter your name" placeholder="* Your Name">
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
@@ -46,12 +47,20 @@
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
-                                            <textarea id="message" class="form-control textarea" rows="10" name="Message" required data-error="Please enter your message subject" placeholder="* Your Message"></textarea>
+                                            <textarea id="message" class="form-control textarea" rows="10" name="message" required data-error="Please enter your message subject" placeholder="* Your Message"></textarea>
                                             <div class="help-block with-errors"></div>
                                         </div>
                                         <div class="form-group">
                                             <button id="submit" type="submit" class="btn selected">Send Message</button>
                                             <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        </div>
+                                        </div>
+                                        <div class="thankyou_message" style="display:none;">
+                                            <h2>
+                                                <b>Thank You</b> for getting in touch!
+                                                <br>
+                                                I'll get back to you very soon!
+                                            </h2>
                                         </div>
                                     </form>
                                 </div>
@@ -65,5 +74,7 @@
 
     <script src='js/jquery.min.js'></script>
     <script src="js/main.js"></script>
+    <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
 </body>
 </html>
