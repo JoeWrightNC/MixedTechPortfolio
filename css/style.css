@@ -378,12 +378,12 @@ a:not([href]):not([tabindex]) {
 }
 
 a.siteNav:link {
-    color:gray !important;
+    color:white !important;
     text-decoration: none;
 }
 
 a.siteNav:visited {
-    color:gray !important;
+    color:white !important;
     text-decoration: none;
 }
 
@@ -726,13 +726,16 @@ h2.menu-item:after {
 }
 
 .title {
-    font-size: 24px;
+    font-size: 30px;
     text-transform: uppercase;
     color: black;
     padding-bottom: 15px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 30px;
+    border-bottom: 3px solid rgb(145, 145, 145);
+    margin-bottom: 50px;
+    margin-top:50px;
     font-weight: 600;
+    width:80%;
+    margin-left:10%;
 }
 
 /*-------------------------------------------------------------------
@@ -950,7 +953,8 @@ h2.menu-item:after {
     border-radius: 0;
     box-shadow: none;
     overflow: visible;
-    width: 90%;
+    width: 80%;
+    margin-left:10%;
 }
 
 .progress-bar {
@@ -980,6 +984,7 @@ h2.menu-item:after {
     color: #333;
     font-weight: 500;
     margin-bottom: 10px;
+    margin-left:10%;
 }
 
 .progress-bar-label span {
@@ -1001,6 +1006,8 @@ h2.menu-item:after {
 
 .timeline {
     position: relative;
+    width:80%;
+    margin-left:10%;
 }
 
 .timeline:before {
@@ -1081,6 +1088,13 @@ h2.menu-item:after {
 
 .service {
     padding-top: 25px;
+    
+}
+
+.serviceRow {
+    width:95%;
+    margin-left:2.5%;
+    text-align: center;
 }
 
 .service h4 {
@@ -1185,7 +1199,8 @@ h2.menu-item:after {
 
 .portfolio-item {
     padding-bottom: 30px;
-    padding: 1px;
+    padding: 10px;
+    box-shadow: black 2px 2px;
 }
 
 .portfolio-item.no-gutter {
@@ -1230,6 +1245,20 @@ h2.menu-item:after {
 }
 
 .portfolio-content h2 {
+    color: #FFF;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+    padding: 0 30px;
+    opacity: 0;
+    text-transform: uppercase;
+    transition: all 0.6s;
+}
+
+.portfolio-content h3 {
     color: #FFF;
     position: relative;
     width: 100%;

@@ -63,7 +63,7 @@ var _React = React,
     files = "./images/intro",
     content = {
         title: "Joe Wright",
-        subtitle: "Creative Full Stack Designer",
+        subtitle: "Creative Full Stack Developer",
         iphone: {
             title: "Design",
             paragraph: "Creative UX/UI architect focused on intuitivity and usability.",
